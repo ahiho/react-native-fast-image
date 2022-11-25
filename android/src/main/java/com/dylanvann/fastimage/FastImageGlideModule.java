@@ -1,3 +1,5 @@
+import android.content.Context;
+
 package com.dylanvann.fastimage;
 
 import com.bumptech.glide.annotation.GlideModule;
