@@ -25,6 +25,8 @@ import java.util.Map;
 
 import javax.annotation.Nullable;
 
+import jp.wasabeef.glide.transformations.BlurTransformation;
+
 class FastImageViewConverter {
     private static final Drawable TRANSPARENT_DRAWABLE = new ColorDrawable(Color.TRANSPARENT);
 
@@ -116,6 +118,10 @@ class FastImageViewConverter {
             // application version changes. Adding a cache signature for only these local resources
             // solves this issue: https://github.com/DylanVann/react-native-fast-image/issues/402
             options = options.apply(signatureOf(ApplicationVersionSignature.obtain(context)));
+        }
+
+        if (source.hasKey("blurRadius") && source.getInt("blurRadius") > 0) {
+            options = options.transform(new BlurTransformation(source.getInt("blurRadius"), 3));
         }
 
         return options;

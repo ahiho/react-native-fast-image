@@ -50,6 +50,7 @@ export type Source = {
     headers?: { [key: string]: string }
     priority?: Priority
     cache?: Cache
+    blurRadius?: number;
 }
 
 export interface OnLoadEvent {
