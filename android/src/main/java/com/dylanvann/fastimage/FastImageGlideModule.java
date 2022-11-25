@@ -1,6 +1,6 @@
-import android.content.Context;
-
 package com.dylanvann.fastimage;
+
+import android.content.Context;
 
 import com.bumptech.glide.annotation.GlideModule;
 import com.bumptech.glide.load.engine.cache.InternalCacheDiskCacheFactory;
