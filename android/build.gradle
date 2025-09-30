@@ -55,7 +55,7 @@ repositories {
     }
     google()
     mavenCentral()
-    maven { url "https://jitpack.io" }
+    maven { url 'https://jitpack.io' }
 }
 
 def glideVersion = safeExtGet('glideVersion', '4.12.0')
@@ -68,5 +68,5 @@ dependencies {
     annotationProcessor "com.github.bumptech.glide:compiler:${glideVersion}"
 
     implementation 'jp.wasabeef:glide-transformations:4.3.0'
-    implementation 'com.github.linversion:android-gpuimage:v2.2.0'
+    implementation 'com.github.linversion:android-gpuimage:master-3e767dad5d-1'
 }
