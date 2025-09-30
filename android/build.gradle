@@ -55,6 +55,7 @@ repositories {
     }
     google()
     mavenCentral()
+    maven { url "https://jitpack.io" }
 }
 
 def glideVersion = safeExtGet('glideVersion', '4.12.0')
