@@ -67,5 +67,5 @@ dependencies {
     annotationProcessor "com.github.bumptech.glide:compiler:${glideVersion}"
 
     implementation 'jp.wasabeef:glide-transformations:4.3.0'
-    implementation 'jp.co.cyberagent.android:gpuimage:2.1.0'
+    implementation 'jp.co.cyberagent.android:gpuimage:2.2.0'
 }
